@@ -1,0 +1,58 @@
+{
+  "nav": {"home":"Home","services":"Services","products":"Products","about":"About Us","network":"Network","contact":"Contact","cta":"Get A Quote"},
+  "hero":{"t1":"Precise procurement.","t2":"Reliable delivery.","desc":"We help Norwegian businesses secure the right products at the right price – with quality and compliance in focus.","cta1":"Get A Quote","cta2":"See Our Services"},
+  "sections":{
+    "services":{"title":"Our services","sub":"Complete solution for Norwegian businesses' procurement needs"},
+    "why":{"title":"Why choose us?","sub":"Our strength lies in experience, network and dedication to quality"},
+    "network":{"title":"Our global network","sub":"Established relationships with quality suppliers around the world"},
+    "flex":{"title":"Flexible delivery solutions","sub":"We adapt the transport method according to your needs and deadlines"}
+  },
+  "services":{
+    "coffee":{"title":"Coffee","desc":"Import of high-quality coffee from the best coffee-growing regions."},
+    "textiles":{"title":"Textiles","desc":"Textile import from reliable suppliers with focus on quality and sustainability."},
+    "handicrafts":{"title":"Handicrafts","desc":"Specialized handicraft products and artisanal crafts of high quality."},
+    "raw":{"title":"Raw Materials","desc":"Import of raw materials and materials for industry and production."},
+    "industry":{"title":"Industry","desc":"Industrial products and equipment for Norwegian businesses."},
+    "import":{"title":"Import","desc":"Complete import services with focus on efficiency and quality."}
+  },
+  "countries": {
+    "india": {"title": "India", "desc": "Textiles & spices"},
+    "brasil": {"title": "Brazil", "desc": "Coffee & sugar"},
+    "etiopia": {"title": "Ethiopia", "desc": "Coffee & tea"},
+    "bangladesh": {"title": "Bangladesh", "desc": "Textiles"},
+    "vietnam": {"title": "Vietnam", "desc": "Rice & seafood products"},
+    "kenya": {"title": "Kenya", "desc": "Tea & coffee"}
+  },
+  "shipping": {
+    "sea": {"title": "Sea Transport", "desc": "Cost-effective for volume"},
+    "air": {"title": "Air Freight", "desc": "Fast delivery for fresh goods"},
+    "land": {"title": "Land Transport", "desc": "Reliable regional distribution"},
+    "express": {"title": "Express", "desc": "24–48 hour delivery for smaller shipments"}
+  },
+  "whyUs": {
+    "network": {"title": "Global network", "desc": "Established relationships with reliable suppliers worldwide"},
+    "team": {"title": "Experienced team", "desc": "Specialists with deep knowledge of international markets"},
+    "quality": {"title": "Quality at every step", "desc": "Thorough control and verification of all products"},
+    "speed": {"title": "Fast delivery", "desc": "Efficient processes for fastest possible delivery time"},
+    "compliance": {"title": "Certification & compliance", "desc": "Ensures all products meet Norwegian and international standards"},
+    "pricing": {"title": "Competitive terms", "desc": "Best possible prices through strong negotiation relationships"}
+  },
+  "footer":{
+    "blurb":"Your reliable partner for procurement and import to Norway. We ensure quality, compliance and competitive prices.",
+    "svc":"Services","cat":"Categories","contact":"Contact",
+    "email":"Email","phone":"Phone","address":"Address",
+    "privacy":"Privacy","terms":"Terms","credit":"Design by Abdullah Alawiss",
+    "services": {
+      "procurement": "Product Procurement",
+      "quality": "Quality Control", 
+      "audit": "Supplier Audit",
+      "logistics": "Logistics"
+    },
+    "categories": {
+      "textiles": "Textiles",
+      "coffee": "Coffee & Tea",
+      "electronics": "Electronics",
+      "food": "Food Products"
+    }
+  }
+}

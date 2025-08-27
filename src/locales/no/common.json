@@ -1,0 +1,58 @@
+{
+  "nav": {"home":"Hjem","services":"Tjenester","products":"Produkter","about":"Om Oss","network":"Nettverk","contact":"Kontakt","cta":"Få Et Tilbud"},
+  "hero":{"t1":"Presis innkjøp.","t2":"Pålitelig levering.","desc":"Vi hjelper norske bedrifter med å sikre riktige produkter til riktig pris – med kvalitet og etterlevelse i fokus.","cta1":"Få Et Tilbud","cta2":"Se Våre Tjenester"},
+  "sections":{
+    "services":{"title":"Våre tjenester","sub":"Komplett løsning for norske bedrifters innkjøpsbehov"},
+    "why":{"title":"Hvorfor velge oss?","sub":"Vår styrke ligger i erfaring, nettverk og dedikasjon til kvalitet"},
+    "network":{"title":"Vårt globale nettverk","sub":"Etablerte relasjoner med kvalitetsleverandører over hele verden"},
+    "flex":{"title":"Fleksible leveringsløsninger","sub":"Vi tilpasser transportmetoden etter dine behov og tidsfrister"}
+  },
+  "services":{
+    "coffee":{"title":"Kaffe","desc":"Import av høykvalitets kaffe fra de beste kaffedyrkende regionene."},
+    "textiles":{"title":"Tekstiler","desc":"Tekstilimport fra pålitelige leverandører med fokus på kvalitet og bærekraft."},
+    "handicrafts":{"title":"Hardicafis","desc":"Spesialiserte håndverksprodukter og kunsthåndverk av høy kvalitet."},
+    "raw":{"title":"Råmaterialer","desc":"Import av råvarer og materialer for industri og produksjon."},
+    "industry":{"title":"Industri","desc":"Industrielle produkter og utstyr for norske bedrifter."},
+    "import":{"title":"Import","desc":"Komplett importtjenester med fokus på effektivitet og kvalitet."}
+  },
+  "countries": {
+    "india": {"title": "India", "desc": "Tekstiler & krydder"},
+    "brasil": {"title": "Brasil", "desc": "Kaffe & sukker"},
+    "etiopia": {"title": "Etiopia", "desc": "Kaffe & te"},
+    "bangladesh": {"title": "Bangladesh", "desc": "Tekstiler"},
+    "vietnam": {"title": "Vietnam", "desc": "Ris & sjømatprodukter"},
+    "kenya": {"title": "Kenya", "desc": "Te & kaffe"}
+  },
+  "shipping": {
+    "sea": {"title": "Sjøtransport", "desc": "Kostnadseffektivt for volum"},
+    "air": {"title": "Luftfrakt", "desc": "Rask levering for ferskvarer"},
+    "land": {"title": "Landtransport", "desc": "Pålitelig regional distribusjon"},
+    "express": {"title": "Express", "desc": "24–48 timers levering for mindre sendinger"}
+  },
+  "whyUs": {
+    "network": {"title": "Globalt nettverk", "desc": "Etablerte relasjoner med pålitelige leverandører verden over"},
+    "team": {"title": "Erfart team", "desc": "Spesialister med dyp kunnskap om internasjonale markeder"},
+    "quality": {"title": "Kvalitet i hvert ledd", "desc": "Grundig kontroll og verifisering av alle produkter"},
+    "speed": {"title": "Rask levering", "desc": "Effektive prosesser for raskest mulig leveringstid"},
+    "compliance": {"title": "Sertifisering & samsvar", "desc": "Sikrer at alle produkter møter norske og internasjonale standarder"},
+    "pricing": {"title": "Konkurransedyktige vilkår", "desc": "Best mulige priser gjennom sterke forhandlingsrelasjoner"}
+  },
+  "footer":{
+    "blurb":"Din pålitelige partner for innkjøp og import til Norge. Vi sikrer kvalitet, etterlevelse og konkurransedyktige priser.",
+    "svc":"Tjenester","cat":"Kategorier","contact":"Kontakt",
+    "email":"E-post","phone":"Telefon","address":"Adresse",
+    "privacy":"Personvern","terms":"Vilkår","credit":"Design by Abdullah Alawiss",
+    "services": {
+      "procurement": "Produktinnkjøp",
+      "quality": "Kvalitetskontroll", 
+      "audit": "Leverandørrevisjon",
+      "logistics": "Logistikk"
+    },
+    "categories": {
+      "textiles": "Tekstiler",
+      "coffee": "Kaffe & Te",
+      "electronics": "Elektronikk",
+      "food": "Matvarer"
+    }
+  }
+}
