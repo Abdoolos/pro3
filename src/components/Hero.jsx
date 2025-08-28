@@ -1,13 +1,24 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
+import ThreeBackground from "./ThreeBackground";
 
 export default function Hero(){
   const { t } = useTranslation();
   
   return (
-    <section id="home" className="section" style={{background:"#F6FBF8"}}>
-      <div className="container" style={{display:"grid",gap:40,gridTemplateColumns:"1.1fr 1fr",alignItems:"center"}}>
+    <section 
+      id="home" 
+      className="section relative overflow-hidden" 
+      style={{
+        background: "linear-gradient(135deg, #F6FBF8 0%, #E8F5E8 100%)",
+        position: "relative"
+      }}
+    >
+      {/* Three.js Interactive Background */}
+      <ThreeBackground />
+
+      <div className="container relative z-10" style={{display:"grid",gap:40,gridTemplateColumns:"1.1fr 1fr",alignItems:"center"}}>
         <div>
           <h1 className="h2" style={{textAlign:"left"}}>
             <span>{t("hero.t1")}</span><br/>

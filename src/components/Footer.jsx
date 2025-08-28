@@ -30,14 +30,14 @@ export default function Footer(){
         <div>
           <h4 style={{marginBottom:12}}> {t("footer.contact")} </h4>
           <ul className="muted">
-            <li>{t("footer.email")}: post@norsource.no</li>
-            <li>{t("footer.phone")}: +47 22 33 44 55</li>
+            <li>{t("footer.email")}: Mahadehussein3@gmail.com</li>
+            <li>{t("footer.phone")}: 0047-48672158</li>
             <li>{t("footer.address")}: Oslo, Norge</li>
           </ul>
         </div>
       </div>
       <div className="container" style={{marginTop:28, borderTop:"1px solid rgba(255,255,255,.1)", paddingTop:16, display:"flex",justifyContent:"space-between"}}>
-        <span className="muted">© 2024 NorSource</span>
+        <span className="muted">© 2024 Alle rettigheter forbeholdt abdoolos.com</span>
         <span className="muted"><a href="#privacy" style={{color:"#fff"}}>{t("footer.privacy")}</a> · <a href="#terms" style={{color:"#fff"}}>{t("footer.terms")}</a> · {t("footer.credit")}</span>
       </div>
     </footer>
