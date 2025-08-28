@@ -1,5 +1,5 @@
 {
-  "nav": {"home":"Hjem","services":"Tjenester","products":"Produkter","about":"Om Oss","network":"Nettverk","contact":"Kontakt","cta":"Få Et Tilbud"},
+  "nav": {"home":"Hjem","services":"Tjenester","products":"Produkter","about":"Om Oss","network":"Nettverk","contact":"Kontakt","cta":"Få Et Tilbud","menu":"Meny"},
   "hero":{"t1":"Presis innkjøp.","t2":"Pålitelig levering.","desc":"Vi hjelper norske bedrifter med å sikre riktige produkter til riktig pris – med kvalitet og etterlevelse i fokus.","cta1":"Få Et Tilbud","cta2":"Se Våre Tjenester"},
   "sections":{
     "services":{"title":"Våre tjenester","sub":"Komplett løsning for norske bedrifters innkjøpsbehov"},

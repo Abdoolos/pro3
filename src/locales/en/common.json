@@ -1,5 +1,5 @@
 {
-  "nav": {"home":"Home","services":"Services","products":"Products","about":"About Us","network":"Network","contact":"Contact","cta":"Get A Quote"},
+  "nav": {"home":"Home","services":"Services","products":"Products","about":"About Us","network":"Network","contact":"Contact","cta":"Get A Quote","menu":"Menu"},
   "hero":{"t1":"Precise procurement.","t2":"Reliable delivery.","desc":"We help Norwegian businesses secure the right products at the right price – with quality and compliance in focus.","cta1":"Get A Quote","cta2":"See Our Services"},
   "sections":{
     "services":{"title":"Our services","sub":"Complete solution for Norwegian businesses' procurement needs"},

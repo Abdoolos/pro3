@@ -54,7 +54,7 @@ export default function Navbar(){
         {/* Mobile Navigation */}
         <div className={`nav--mobile ${isMenuOpen ? 'nav--mobile-open' : ''}`}>
           <div className="mobile-menu-header">
-            <span style={{fontWeight: 700, fontSize: '18px'}}>القوائم</span>
+            <span style={{fontWeight: 700, fontSize: '18px'}}>{t("nav.menu")}</span>
             <button 
               className="mobile-menu-close"
               onClick={closeMenu}
