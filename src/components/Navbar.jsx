@@ -38,18 +38,30 @@ export default function Navbar(){
           <LanguageSwitcher />
         </nav>
 
-        {/* Mobile Menu Button */}
-        <button 
-          className="mobile-menu-btn"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <span className={`hamburger ${isMenuOpen ? 'hamburger--open' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
+        {/* Mobile Controls - Language + Menu Button */}
+        <div className="mobile-controls" style={{
+          display: 'none',
+          alignItems: 'center',
+          gap: '12px'
+        }}>
+          {/* Mobile Language Switcher */}
+          <div className="mobile-header-lang">
+            <LanguageSwitcher />
+          </div>
+          
+          {/* Mobile Menu Button */}
+          <button 
+            className="mobile-menu-btn"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            <span className={`hamburger ${isMenuOpen ? 'hamburger--open' : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
 
         {/* Mobile Navigation */}
         <div className={`nav--mobile ${isMenuOpen ? 'nav--mobile-open' : ''}`}>
@@ -71,9 +83,6 @@ export default function Navbar(){
             <a href="#network" onClick={closeMenu}>{t("nav.network")}</a>
             <a href="#contact" onClick={closeMenu}>{t("nav.contact")}</a>
             <a className="btn btn--primary mobile-cta" href="#contact" onClick={closeMenu}>{t("nav.cta")}</a>
-            <div className="mobile-lang-switcher">
-              <LanguageSwitcher />
-            </div>
           </nav>
         </div>
 

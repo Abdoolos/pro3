@@ -21,17 +21,22 @@ export default function Network(){
         
         <div className="grid grid--3" style={{marginTop: 48}}>
           {countries.map((country) => (
-            <div key={country.key} className="card">
-              <div style={{fontSize: 48, marginBottom: 16, textAlign: 'center'}}>
+            <article 
+              key={country.key}
+              className="card network-card"
+            >
+              <div className="network-flag">
                 {country.flag}
               </div>
-              <h3 className="card__title" style={{textAlign: 'center', fontSize: 20}}>
+              
+              <h3 className="card__title">
                 {t(`countries.${country.key}.title`)}
               </h3>
-              <p className="card__desc" style={{textAlign: 'center'}}>
+              
+              <p className="card__desc">
                 {t(`countries.${country.key}.desc`)}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
