@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import WhyUs from "./components/WhyUs";
 import Network from "./components/Network";
 import Flexible from "./components/Flexible";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import MorphingShapes from "./components/MorphingShapes";
 import ParallaxElements from "./components/ParallaxElements";
@@ -35,6 +36,7 @@ export default function App(){
       <WhyUs />
       <Network />
       <Flexible />
+      <Contact />
       <Footer />
     </>
   );

@@ -6,6 +6,27 @@ import ThreeBackground from "./ThreeBackground";
 export default function Hero(){
   const { t } = useTranslation();
   
+  const scrollToSection = (sectionId) => {
+    console.log('🎯 Attempting to scroll to:', sectionId);
+    const element = document.getElementById(sectionId);
+    console.log('📍 Element found:', element);
+    
+    if (element) {
+      console.log('✅ Scrolling to element:', element);
+      // إضافة تأخير صغير وتحسينات للتنقل
+      setTimeout(() => {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest'
+        });
+        console.log('🚀 Scroll initiated successfully');
+      }, 100);
+    } else {
+      console.error('❌ Element not found with ID:', sectionId);
+    }
+  };
+  
   return (
     <section 
       id="home" 
@@ -25,9 +46,21 @@ export default function Hero(){
             <span style={{color:"var(--primary)"}}>{t("hero.t2")}</span>
           </h1>
           <p className="sub" style={{textAlign:"left",maxWidth:560,marginTop:16}}>{t("hero.desc")}</p>
-          <div style={{display:"flex",gap:14,marginTop:28}}>
-            <a className="btn btn--primary" href="#contact">{t("hero.cta1")}</a>
-            <a className="btn btn--outline" href="#services">{t("hero.cta2")} <ArrowRight size={18}/></a>
+          <div style={{display:"flex",gap:14,marginTop:28,position:"relative",zIndex:100,pointerEvents:"auto"}}>
+            <button 
+              className="btn btn--primary" 
+              onClick={() => scrollToSection('contact')}
+              style={{position:"relative",zIndex:101,pointerEvents:"auto"}}
+            >
+              {t("hero.cta1")}
+            </button>
+            <button 
+              className="btn btn--outline" 
+              onClick={() => scrollToSection('services')}
+              style={{position:"relative",zIndex:101,pointerEvents:"auto"}}
+            >
+              {t("hero.cta2")} <ArrowRight size={18}/>
+            </button>
           </div>
         </div>
         <img 

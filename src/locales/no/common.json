@@ -37,6 +37,25 @@
     "compliance": {"title": "Sertifisering & samsvar", "desc": "Sikrer at alle produkter møter norske og internasjonale standarder"},
     "pricing": {"title": "Konkurransedyktige vilkår", "desc": "Best mulige priser gjennom sterke forhandlingsrelasjoner"}
   },
+  "contact": {
+    "badge": "Kontakt Oss",
+    "title": "Ta Kontakt",
+    "body": "Du kan kontakte oss direkte gjennom skjemaet nedenfor",
+    "info": "Kontaktinformasjon",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-post",
+    "success": "✅ Melding sendt vellykket!",
+    "error": "❌ En feil oppstod, prøv igjen",
+    "form": {
+      "title": "Send oss en Melding",
+      "name": "Ditt Navn",
+      "email": "Din E-post",
+      "message": "Din Melding",
+      "send": "Send Melding",
+      "sending": "Sender..."
+    }
+  },
   "footer":{
     "blurb":"Din pålitelige partner for innkjøp og import til Norge. Vi sikrer kvalitet, etterlevelse og konkurransedyktige priser.",
     "svc":"Tjenester","cat":"Kategorier","contact":"Kontakt",

@@ -10,10 +10,10 @@ function AnimatedParticles({ mouse }) {
   
   // إنشاء الجسيمات بشكل عشوائي
   const [positions, colors] = useMemo(() => {
-    const positions = new Float32Array(1500 * 3); // 1500 جسيم لأداء أفضل
-    const colors = new Float32Array(1500 * 3);
+    const positions = new Float32Array(300 * 3); // 300 جسيم - تقليل كبير
+    const colors = new Float32Array(300 * 3);
     
-    for (let i = 0; i < 1500; i++) {
+    for (let i = 0; i < 300; i++) {
       // توزيع الجسيمات في الفضاء
       positions[i * 3] = (Math.random() - 0.5) * 15;     // x
       positions[i * 3 + 1] = (Math.random() - 0.5) * 15; // y  
@@ -89,26 +89,6 @@ function AnimatedParticles({ mouse }) {
         />
       </mesh>
 
-      {/* أشكال هندسية إضافية */}
-      <mesh position={[3, 2, -6]} rotation={[0, 0, Math.PI / 4]}>
-        <boxGeometry args={[0.8, 0.8, 0.8]} />
-        <meshBasicMaterial 
-          color="#16A34A" 
-          transparent 
-          opacity={0.05}
-          wireframe={true}
-        />
-      </mesh>
-
-      <mesh position={[-3, -2, -5]}>
-        <octahedronGeometry args={[0.6]} />
-        <meshBasicMaterial 
-          color="#38BDF8" 
-          transparent 
-          opacity={0.06}
-          wireframe={true}
-        />
-      </mesh>
     </group>
   );
 }
@@ -149,8 +129,21 @@ export default function ThreeBackground() {
           near: 0.1,
           far: 100 
         }}
-        style={{ background: 'transparent' }}
+        style={{ 
+          background: 'transparent',
+          touchAction: 'auto',
+          pointerEvents: 'none'
+        }}
         dpr={[1, 1.5]} // تحسين الأداء
+        gl={{ 
+          alpha: true, 
+          antialias: false, 
+          powerPreference: 'low-power'
+        }}
+        onCreated={({ gl }) => {
+          gl.domElement.style.touchAction = 'auto';
+          gl.domElement.style.pointerEvents = 'none';
+        }}
       >
         {/* إضاءة محيطية ناعمة */}
         <ambientLight intensity={0.3} />

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export default function Footer(){
   const { t } = useTranslation();
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
       <div className="container cols">
         <div>
           <p style={{opacity:.9}}>{t("footer.blurb")}</p>
@@ -30,7 +30,6 @@ export default function Footer(){
         <div>
           <h4 style={{marginBottom:12}}> {t("footer.contact")} </h4>
           <ul className="muted">
-            <li>{t("footer.email")}: Mahadehussein3@gmail.com</li>
             <li>{t("footer.phone")}: 0047-48672158</li>
             <li>{t("footer.address")}: Oslo, Norge</li>
           </ul>
