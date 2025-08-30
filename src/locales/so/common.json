@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Bogga Hore",
+    "services": "Adeegyada",
+    "products": "Alaabooyinka",
+    "about": "Nagu Saabsan",
+    "network": "Shabakadda",
+    "contact": "Xiriir",
+    "cta": "Hel Xigasho",
+    "menu": "Liiska",
+    "language": "Luuqad"
+  },
+  "hero": {
+    "t1": "Iibsasho sax ah.",
+    "t2": "Gaarsiin la isku halayn karo.",
+    "desc": "Waxaan ka caawinaynaa shirkadaha Noorwiijiga inay helaan alaab sax ah qiime ku habboon iyadoo tayada & u hoggaansanaantu muhiim tahay.",
+    "cta1": "Hel Xigasho",
+    "cta2": "Eeg Adeegyadayada"
+  },
+  "sections": {
+    "services": {
+      "title": "Adeegyadayada",
+      "sub": "Xal dhamaystiran oo loogu talagalay baahiyaha iibsiga ee shirkadaha Noorwiijiga"
+    },
+    "why": {
+      "title": "Maxaad noo dooranaysaa?",
+      "sub": "Awooddeenu waa khibradda, shabakadda iyo u heellanaanta tayada"
+    },
+    "network": {
+      "title": "Shabakaddeenna caalamiga ah",
+      "sub": "Xiriirro la aasaasay oo lala leeyahay alaab-qeybiyeyaal tayo leh dunida oo dhan"
+    },
+    "flex": {
+      "title": "Xalal gaarsiin dabacsan",
+      "sub": "Waxaan u habaynnaa habka gaadiidka baahiyahaaga & waqtiga kama dambaysta ah"
+    }
+  },
+  "services": {
+    "coffee": {
+      "title": "Qaxwo",
+      "desc": "Keenista qaxwo tayo sare leh oo ka timaadda gobollada ugu fiican."
+    },
+    "textiles": {
+      "title": "Dharka",
+      "desc": "Soo dejin dhar ka imanaya alaab-qeybiyeyaal lagu kalsoonaan karo oo diiradda saaraya tayo & waaraansho."
+    },
+    "handicrafts": {
+      "title": "Farshaxan",
+      "desc": "Alaabo farshaxan iyo gacmo-farsamo oo tayo sare leh."
+    },
+    "raw": {
+      "title": "Khayraad Asal ah",
+      "desc": "Soo dejin agab iyo walxo ceeriin oo loogu talagalay warshadaha & soo saarista."
+    },
+    "industry": {
+      "title": "Warshadaha",
+      "desc": "Alaabooyin & qalab warshadeed oo loogu talagalay shirkadaha Noorwiijiga."
+    },
+    "import": {
+      "title": "Soo Dejinta",
+      "desc": "Adeegyo soo dejin dhamaystiran oo diiradda saaraya hufnaan & tayo."
+    }
+  },
+  "countries": {
+    "india": { "title": "Hindiya", "desc": "Dharka & Xawaashka" },
+    "brasil": { "title": "Braasiil", "desc": "Qaxwo & Sonkor" },
+    "etiopia": { "title": "Itoobiya", "desc": "Qaxwo & Shaah" },
+    "bangladesh": { "title": "Bangladesh", "desc": "Dharka" },
+    "vietnam": { "title": "Fiyetnaam", "desc": "Bariis & Kalluun badeed" },
+    "kenya": { "title": "Kiiniya", "desc": "Shaah & Qaxwo" }
+  },
+  "shipping": {
+    "sea": { "title": "Gaadiidka Badda", "desc": "Kharash-ku-ool marka ay tiro badan tahay" },
+    "air": { "title": "Qaadka Hawada", "desc": "Gaarsiin degdeg ah oo loogu talagalay alaab cusub" },
+    "land": { "title": "Gaadiidka Dhulka", "desc": "Qaybin goboleed lagu kalsoonaan karo" },
+    "express": { "title": "Degdeg", "desc": "24–48 saacadood gaarsiinta rar yar" }
+  },
+  "whyUs": {
+    "network": { "title": "Shabakad Caalami ah", "desc": "Xiriirro la aasaasay oo lala leeyahay alaab-qeybiyeyaal la isku halayn karo" },
+    "team": { "title": "Koox Khibrad Leh", "desc": "Khabiirro aqoon qoto dheer u leh suuqyada caalamiga ah" },
+    "quality": { "title": "Tayo Talaabo Kasta", "desc": "Kormeer & xaqiijin dhamaystiran oo alaab kasta ah" },
+    "speed": { "title": "Gaarsiin Degdeg ah", "desc": "Habraacyo hufan si loo helo waqtiga gaarsiinta ugu gaaban" },
+    "compliance": { "title": "Shahaado & U Hoggaansanaan", "desc": "Hubin in alaabtu la jaanqaaddo heerarka Noorwiijiga & caalamiga ah" },
+    "pricing": { "title": "Shuruudo Tartan leh", "desc": "Qiimayaasha ugu fiican iyada oo loo marayo wada xaajood xooggan" }
+  },
+  "contact": {
+    "badge": "Nala Soo Xiriir",
+    "title": "La Xidhiidh",
+    "body": "Waxaad si toos ah noogu soo diri kartaa fariin adigoo isticmaalaya foomka hoose",
+    "info": "Macluumaadka Xiriirka",
+    "address": "Cinwaan",
+    "phone": "Telefoon",
+    "email": "E-mayl",
+    "success": "✅ Fariinta waa la diray!",
+    "error": "❌ Khalad ayaa dhacay, fadlan isku day mar kale",
+    "form": {
+      "title": "Noo Soo Dir Fariin",
+      "name": "Magacaaga",
+      "email": "E-maylkaaga",
+      "message": "Fariintaada",
+      "send": "Dir",
+      "sending": "Diraya..."
+    }
+  },
+  "footer": {
+    "blurb": "Lammaane lagu kalsoonaan karo oo kuu fududeynaya soo iibsiga & soo dejinta Norway. Waxaan hubinaa tayo, u hoggaansanaan & qiimo tartan leh.",
+    "svc": "Adeegyada",
+    "cat": "Qaybaha",
+    "contact": "Xiriir",
+    "email": "E-mayl",
+    "phone": "Telefoon",
+    "address": "Cinwaan",
+    "privacy": "Asturnaanta",
+    "terms": "Shuruudaha",
+    "credit": "Naqshad: Abdullah Alawiss",
+    "services": {
+      "procurement": "Helitaanka Alaabada",
+      "quality": "Kormeer Tayada",
+      "audit": "Kormeer Alaab-qeybiye",
+      "logistics": "Saadka"
+    },
+    "categories": {
+      "textiles": "Dharka",
+      "coffee": "Qaxwo & Shaah",
+      "electronics": "Koronto",
+      "food": "Raashin"
+    }
+  }
+}
