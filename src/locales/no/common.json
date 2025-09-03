@@ -37,6 +37,16 @@
     "compliance": {"title": "Sertifisering & samsvar", "desc": "Sikrer at alle produkter møter norske og internasjonale standarder"},
     "pricing": {"title": "Konkurransedyktige vilkår", "desc": "Best mulige priser gjennom sterke forhandlingsrelasjoner"}
   },
+  "about": {
+    "badge": "Om Oss",
+    "title": "ScandiTrade Global",
+    "body": "ScandiTrade Global gjør handel mellom land enkelt. Vi hjelper bedrifter og privatpersoner med å importere og eksportere varer trygt, effektivt og uten stress.",
+    "list": [
+      "Enten du skal sende produkter ut i verden eller hente varer hjem, sørger vi for at alt går som det skal. Vi kobler deg med riktige leverandører, ordner frakt og følger opp hele veien.",
+      "Ingen kompliserte systemer. Ingen unødvendige mellomledd.",
+      "Vi er brobyggeren mellom deg og markedene du vil nå."
+    ]
+  },
   "contact": {
     "badge": "Kontakt Oss",
     "title": "Ta Kontakt",

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import About from "./components/About";
 import WhyUs from "./components/WhyUs";
 import Network from "./components/Network";
 import Flexible from "./components/Flexible";
@@ -36,6 +37,7 @@ export default function App(){
       <WhyUs />
       <Network />
       <Flexible />
+      <About />
       <Contact />
       <Footer />
     </>

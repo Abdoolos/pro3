@@ -23,7 +23,7 @@ export default function Navbar(){
             <circle cx="18" cy="18" r="16" fill="#22C55E"/>
             <path d="M12 18l4 4 8-8" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          <span>ProHuset</span>
+          <span>ScandiTrade</span>
         </div>
 
         {/* Desktop Navigation */}
