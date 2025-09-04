@@ -167,8 +167,9 @@ h1,h2,h3{margin:0;word-wrap:break-word}
 .nav a{color:#334155;text-decoration:none;padding:10px 6px;border-radius:8px}
 .nav a:hover{background:#F8FAFC}
 
-/* Mobile Controls */
-.mobile-controls {
+/* Mobile Controls - إصلاح المشكلة */
+.mobile-controls,
+.mobile-controls-wrapper {
   display: none;
   align-items: center;
   gap: 12px;
@@ -176,18 +177,19 @@ h1,h2,h3{margin:0;word-wrap:break-word}
 
 /* Mobile Menu Button */
 .mobile-menu-btn{
-  display:none;
-  background:none;
-  border:none;
-  cursor:pointer;
-  padding:8px;
-  z-index:10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.2s ease;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  z-index: 10000;
 }
 
 .mobile-menu-btn:hover {
@@ -208,10 +210,11 @@ h1,h2,h3{margin:0;word-wrap:break-word}
   padding: 6px 12px !important;
   font-size: 12px !important;
   min-width: 50px !important;
-  font-weight: bold !important;
+  font-weight: 600 !important;
   border-radius: 6px !important;
 }
 
+/* Hamburger Icon */
 .hamburger{
   display:flex;
   flex-direction:column;
@@ -438,22 +441,24 @@ img, svg, video, canvas, iframe, embed, object {
   overflow-wrap: break-word;
 }
 
-/* Responsive Styles */
+/* الإصلاح الرئيسي - عرض العناصر على الشاشات الصغيرة */
 @media (max-width: 1024px) {
   .nav--desktop {
     display: none !important;
   }
   
-  .mobile-controls {
+  .mobile-controls,
+  .mobile-controls-wrapper {
+    display: flex !important;
+  }
+  
+  .mobile-menu-btn {
     display: flex !important;
   }
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .mobile-menu-btn{
-    display:block !important;
-  }
-  
   .container{
     padding:0 16px;
     max-width: calc(100vw - 32px);
@@ -509,6 +514,16 @@ img, svg, video, canvas, iframe, embed, object {
   .mobile-lang-switcher{
     display: none !important;
   }
+  
+  /* تأكيد عرض العناصر على الموبايل */
+  .mobile-controls,
+  .mobile-controls-wrapper {
+    display: flex !important;
+  }
+  
+  .mobile-menu-btn {
+    display: flex !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -518,13 +533,23 @@ img, svg, video, canvas, iframe, embed, object {
   }
 }
 
-@media (min-width: 769px) {
+/* إخفاء على الشاشات الكبيرة */
+@media (min-width: 1025px) {
+  .mobile-controls,
+  .mobile-controls-wrapper {
+    display: none !important;
+  }
+  
   .mobile-menu-btn{
-    display:none !important;
+    display: none !important;
   }
   
   .nav--mobile{
-    display:none !important;
+    display: none !important;
+  }
+  
+  .nav--desktop {
+    display: flex !important;
   }
 }
 
