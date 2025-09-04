@@ -28,14 +28,33 @@ export default function LanguageSwitcher(){
         fontSize: '12px',
         minWidth: '110px',
         fontWeight: 'bold',
-        border: '1px solid var(--border)',
+        border: '2px solid #000000',
         borderRadius: '6px',
         cursor: 'pointer',
-        background: 'var(--bg, #fff)'
+        background: '#ffffff',
+        color: '#000000',
+        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        transition: 'all 0.2s ease'
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = '#f9fafb';
+        e.target.style.transform = 'scale(1.02)';
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = '#ffffff';
+        e.target.style.transform = 'scale(1)';
       }}
     >
       {languages.map(l => (
-        <option key={l.code} value={l.code}>
+        <option 
+          key={l.code} 
+          value={l.code}
+          style={{
+            color: '#000000',
+            backgroundColor: '#ffffff',
+            padding: '4px 8px'
+          }}
+        >
           {l.label}
         </option>
       ))}

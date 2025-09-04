@@ -7,11 +7,24 @@ export default function Navbar() {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const menuRef = useRef(null);
   const firstLinkRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
+    
+    // Check screen size on mount and resize
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+    
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
   }, []);
 
   const openMenu = () => {
@@ -233,25 +246,26 @@ export default function Navbar() {
         <nav 
           className="nav nav--desktop"
           style={{
-            display: window.innerWidth > 1024 ? 'flex' : 'none',
+            display: isMobile ? 'none' : 'flex',
             alignItems: 'center',
             gap: '24px'
           }}
         >
-          <a href="#home">{t("nav.home")}</a>
-          <a href="#services">{t("nav.services")}</a>
-          <a href="#products">{t("nav.products")}</a>
-          <a href="#about">{t("nav.about")}</a>
-          <a href="#network">{t("nav.network")}</a>
-          <a href="#contact">{t("nav.contact")}</a>
+          <a href="#home" style={{ color: '#374151', textDecoration: 'none' }}>{t("nav.home")}</a>
+          <a href="#services" style={{ color: '#374151', textDecoration: 'none' }}>{t("nav.services")}</a>
+          <a href="#products" style={{ color: '#374151', textDecoration: 'none' }}>{t("nav.products")}</a>
+          <a href="#about" style={{ color: '#374151', textDecoration: 'none' }}>{t("nav.about")}</a>
+          <a href="#network" style={{ color: '#374151', textDecoration: 'none' }}>{t("nav.network")}</a>
+          <a href="#contact" style={{ color: '#374151', textDecoration: 'none' }}>{t("nav.contact")}</a>
           <a className="btn btn--primary" href="#contact">{t("nav.cta")}</a>
           <LanguageSwitcher />
         </nav>
 
-        {/* Mobile Controls - مع ألوان مجبرة */}
+        {/* Mobile Controls */}
         <div 
+          className="mobile-controls"
           style={{
-            display: window.innerWidth <= 1024 ? 'flex' : 'none',
+            display: isMobile ? 'flex' : 'none',
             alignItems: 'center',
             gap: '12px',
             backgroundColor: 'transparent'
@@ -264,6 +278,7 @@ export default function Navbar() {
           
           {/* Menu Button */}
           <button 
+            className="mobile-menu-btn"
             onClick={openMenu}
             aria-label="Open navigation menu"
             style={{
@@ -272,38 +287,44 @@ export default function Navbar() {
               justifyContent: 'center',
               width: '44px',
               height: '44px',
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(0, 0, 0, 0.1)',
+              background: 'rgba(255, 255, 255, 0.9)',
+              border: '2px solid #000000',
               cursor: 'pointer',
               borderRadius: '8px',
               padding: '8px',
-              transition: 'all 0.2s ease'
+              transition: 'all 0.2s ease',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
             }}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+              e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+              e.target.style.transform = 'scale(1.05)';
             }}
             onMouseLeave={(e) => {
-              e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+              e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+              e.target.style.transform = 'scale(1)';
             }}
           >
-            {/* Hamburger Icon مع ألوان واضحة */}
-            <div style={{
-              width: '24px',
-              height: '18px',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              position: 'relative'
-            }}>
+            {/* Hamburger Icon with high contrast */}
+            <div 
+              className="hamburger"
+              style={{
+                width: '24px',
+                height: '18px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                position: 'relative'
+              }}
+            >
               <span style={{
                 width: '100%',
                 height: '3px',
                 backgroundColor: '#000000',
                 borderRadius: '2px',
                 display: 'block',
-                boxShadow: '0 0 1px rgba(255,255,255,0.5)',
                 transition: 'all 0.3s ease',
-                transform: isMenuOpen ? 'translateY(7px) rotate(45deg)' : 'none'
+                transform: isMenuOpen ? 'translateY(7px) rotate(45deg)' : 'none',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.2)'
               }}></span>
               <span style={{
                 width: '100%',
@@ -311,10 +332,10 @@ export default function Navbar() {
                 backgroundColor: '#000000',
                 borderRadius: '2px',
                 display: 'block',
-                boxShadow: '0 0 1px rgba(255,255,255,0.5)',
                 transition: 'all 0.3s ease',
                 opacity: isMenuOpen ? 0 : 1,
-                transform: isMenuOpen ? 'scaleX(0)' : 'none'
+                transform: isMenuOpen ? 'scaleX(0)' : 'none',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.2)'
               }}></span>
               <span style={{
                 width: '100%',
@@ -322,9 +343,9 @@ export default function Navbar() {
                 backgroundColor: '#000000',
                 borderRadius: '2px',
                 display: 'block',
-                boxShadow: '0 0 1px rgba(255,255,255,0.5)',
                 transition: 'all 0.3s ease',
-                transform: isMenuOpen ? 'translateY(-7px) rotate(-45deg)' : 'none'
+                transform: isMenuOpen ? 'translateY(-7px) rotate(-45deg)' : 'none',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.2)'
               }}></span>
             </div>
           </button>

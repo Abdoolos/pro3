@@ -167,29 +167,34 @@ h1,h2,h3{margin:0;word-wrap:break-word}
 .nav a{color:#334155;text-decoration:none;padding:10px 6px;border-radius:8px}
 .nav a:hover{background:#F8FAFC}
 
-/* Mobile Controls - إصلاح المشكلة */
+/* Mobile Controls - Fixed */
 .mobile-controls {
-  display: none !important;
-  align-items: center;
-  gap: 12px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 
 /* Mobile Menu Button */
 .mobile-menu-btn{
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid #000000 !important;
+  cursor: pointer !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   z-index: 10000;
+  visibility: visible !important;
+  opacity: 1 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
 
 .mobile-menu-btn:hover {
