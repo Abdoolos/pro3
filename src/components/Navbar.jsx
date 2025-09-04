@@ -63,224 +63,48 @@ export default function Navbar() {
         <div 
           className="mobile-menu-backdrop"
           onClick={closeMenu}
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            zIndex: 1000,
-            cursor: 'pointer'
-          }}
         />
         
-        {/* Menu Sidebar */}
+        {/* Menu Container */}
         <div 
-          className="mobile-menu-sidebar"
+          className="mobile-menu-container"
           ref={menuRef}
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
-          style={{
-            position: 'fixed',
-            top: 0,
-            right: 0,
-            bottom: 0,
-            width: '320px',
-            maxWidth: '85vw',
-            backgroundColor: 'white',
-            zIndex: 1001,
-            boxShadow: '-4px 0 24px rgba(0, 0, 0, 0.15)',
-            transform: 'translateX(0)',
-            transition: 'transform 0.3s ease-out',
-            display: 'flex',
-            flexDirection: 'column'
-          }}
         >
-          {/* Header */}
-          <div 
-            className="mobile-menu-header"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              padding: '20px 24px',
-              borderBottom: '1px solid #e5e7eb',
-              backgroundColor: 'white'
-            }}
-          >
-            <span style={{ fontWeight: 700, fontSize: '18px', color: '#1f2937' }}>
-              {t("nav.menu")}
-            </span>
-            <button 
-              className="mobile-menu-close-btn"
-              onClick={closeMenu}
-              aria-label="Close menu"
-              style={{
-                width: '40px',
-                height: '40px',
-                border: 'none',
-                backgroundColor: 'transparent',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-                fontSize: '24px',
-                color: '#6b7280',
-                transition: 'background-color 0.2s ease'
-              }}
-              onMouseEnter={(e) => e.target.style.backgroundColor = '#f3f4f6'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
-            >
-              ×
-            </button>
-          </div>
-          
-          {/* Navigation Links */}
-          <nav 
-            className="mobile-menu-nav"
-            style={{
-              flex: 1,
-              padding: '24px',
-              overflowY: 'auto'
-            }}
-          >
-            <a 
-              href="#home" 
-              ref={firstLinkRef} 
-              onClick={closeMenu}
-              style={{
-                display: 'block',
-                padding: '16px 0',
-                color: '#374151',
-                textDecoration: 'none',
-                fontWeight: 500,
-                fontSize: '16px',
-                borderBottom: '1px solid #f3f4f6',
-                transition: 'color 0.2s ease'
-              }}
-              onMouseEnter={(e) => e.target.style.color = '#22C55E'}
-              onMouseLeave={(e) => e.target.style.color = '#374151'}
-            >
-              {t("nav.home")}
-            </a>
-            <a 
-              href="#services" 
-              onClick={closeMenu}
-              style={{
-                display: 'block',
-                padding: '16px 0',
-                color: '#374151',
-                textDecoration: 'none',
-                fontWeight: 500,
-                fontSize: '16px',
-                borderBottom: '1px solid #f3f4f6',
-                transition: 'color 0.2s ease'
-              }}
-              onMouseEnter={(e) => e.target.style.color = '#22C55E'}
-              onMouseLeave={(e) => e.target.style.color = '#374151'}
-            >
-              {t("nav.services")}
-            </a>
-            <a 
-              href="#products" 
-              onClick={closeMenu}
-              style={{
-                display: 'block',
-                padding: '16px 0',
-                color: '#374151',
-                textDecoration: 'none',
-                fontWeight: 500,
-                fontSize: '16px',
-                borderBottom: '1px solid #f3f4f6',
-                transition: 'color 0.2s ease'
-              }}
-              onMouseEnter={(e) => e.target.style.color = '#22C55E'}
-              onMouseLeave={(e) => e.target.style.color = '#374151'}
-            >
-              {t("nav.products")}
-            </a>
-            <a 
-              href="#about" 
-              onClick={closeMenu}
-              style={{
-                display: 'block',
-                padding: '16px 0',
-                color: '#374151',
-                textDecoration: 'none',
-                fontWeight: 500,
-                fontSize: '16px',
-                borderBottom: '1px solid #f3f4f6',
-                transition: 'color 0.2s ease'
-              }}
-              onMouseEnter={(e) => e.target.style.color = '#22C55E'}
-              onMouseLeave={(e) => e.target.style.color = '#374151'}
-            >
-              {t("nav.about")}
-            </a>
-            <a 
-              href="#network" 
-              onClick={closeMenu}
-              style={{
-                display: 'block',
-                padding: '16px 0',
-                color: '#374151',
-                textDecoration: 'none',
-                fontWeight: 500,
-                fontSize: '16px',
-                borderBottom: '1px solid #f3f4f6',
-                transition: 'color 0.2s ease'
-              }}
-              onMouseEnter={(e) => e.target.style.color = '#22C55E'}
-              onMouseLeave={(e) => e.target.style.color = '#374151'}
-            >
-              {t("nav.network")}
-            </a>
-            <a 
-              href="#contact" 
-              onClick={closeMenu}
-              style={{
-                display: 'block',
-                padding: '16px 0',
-                color: '#374151',
-                textDecoration: 'none',
-                fontWeight: 500,
-                fontSize: '16px',
-                borderBottom: '1px solid #f3f4f6',
-                transition: 'color 0.2s ease'
-              }}
-              onMouseEnter={(e) => e.target.style.color = '#22C55E'}
-              onMouseLeave={(e) => e.target.style.color = '#374151'}
-            >
-              {t("nav.contact")}
-            </a>
+          <div className="mobile-menu-content">
+            {/* Header */}
+            <div className="mobile-menu-header">
+              <span className="mobile-menu-title">{t("nav.menu")}</span>
+              <button 
+                className="mobile-menu-close"
+                onClick={closeMenu}
+                aria-label="Close menu"
+              >
+                <span className="close-icon">×</span>
+              </button>
+            </div>
             
-            {/* CTA Button */}
-            <a 
-              className="btn btn--primary" 
-              href="#contact" 
-              onClick={closeMenu}
-              style={{
-                display: 'inline-block',
-                marginTop: '24px',
-                padding: '12px 24px',
-                backgroundColor: '#22C55E',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '8px',
-                fontWeight: 600,
-                textAlign: 'center',
-                transition: 'background-color 0.2s ease',
-                width: '100%'
-              }}
-              onMouseEnter={(e) => e.target.style.backgroundColor = '#16a34a'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = '#22C55E'}
-            >
-              {t("nav.cta")}
-            </a>
-          </nav>
+            {/* Navigation Links */}
+            <nav className="mobile-menu-nav">
+              <a href="#home" ref={firstLinkRef} onClick={closeMenu}>{t("nav.home")}</a>
+              <a href="#services" onClick={closeMenu}>{t("nav.services")}</a>
+              <a href="#products" onClick={closeMenu}>{t("nav.products")}</a>
+              <a href="#about" onClick={closeMenu}>{t("nav.about")}</a>
+              <a href="#network" onClick={closeMenu}>{t("nav.network")}</a>
+              <a href="#contact" onClick={closeMenu}>{t("nav.contact")}</a>
+              
+              {/* CTA Button */}
+              <a 
+                className="btn btn--primary mobile-cta" 
+                href="#contact" 
+                onClick={closeMenu}
+              >
+                {t("nav.cta")}
+              </a>
+            </nav>
+          </div>
         </div>
       </>,
       document.body
@@ -288,31 +112,10 @@ export default function Navbar() {
   };
 
   return (
-    <header className="header" style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      backgroundColor: 'rgba(255, 255, 255, 0.95)',
-      backdropFilter: 'blur(10px)',
-      borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
-      zIndex: 100
-    }}>
-      <div className="container" style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between", 
-        padding: "14px 20px",
-        maxWidth: "1200px",
-        margin: "0 auto"
-      }}>
+    <header className="header">
+      <div className="navbar-container">
         {/* Logo */}
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          fontWeight: 700
-        }}>
+        <div className="logo">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
             <circle cx="18" cy="18" r="16" fill="#22C55E"/>
             <path d="M12 18l4 4 8-8" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
@@ -321,7 +124,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="nav nav--desktop" style={{ display: 'none' }}>
+        <nav className="nav nav--desktop">
           <a href="#home">{t("nav.home")}</a>
           <a href="#services">{t("nav.services")}</a>
           <a href="#products">{t("nav.products")}</a>
@@ -332,56 +135,87 @@ export default function Navbar() {
           <LanguageSwitcher />
         </nav>
 
-        {/* Mobile Controls */}
-        <div className="mobile-controls" style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '12px'
-        }}>
-          <LanguageSwitcher />
+        {/* Mobile Controls - مع inline styles للتأكد من الظهور */}
+        <div 
+          className="mobile-controls"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px'
+          }}
+        >
+          {/* Language Switcher */}
+          <div className="mobile-header-lang">
+            <LanguageSwitcher />
+          </div>
           
+          {/* Menu Button */}
           <button 
             className="mobile-menu-btn"
             onClick={openMenu}
             aria-label="Open navigation menu"
+            aria-expanded={isMenuOpen}
             style={{
-              width: '44px',
-              height: '44px',
-              border: 'none',
-              backgroundColor: 'transparent',
-              cursor: 'pointer',
-              borderRadius: '8px',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              width: '44px',
+              height: '44px',
+              background: 'transparent',
+              border: 'none',
+              cursor: 'pointer',
+              borderRadius: '8px',
+              padding: '0'
             }}
           >
-            <div style={{
-              width: '24px',
-              height: '18px',
-              position: 'relative',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between'
-            }}>
-              <span style={{
-                width: '100%',
-                height: '2px',
-                backgroundColor: '#1a1a1a',
-                borderRadius: '2px'
-              }}></span>
-              <span style={{
-                width: '100%',
-                height: '2px',
-                backgroundColor: '#1a1a1a',
-                borderRadius: '2px'
-              }}></span>
-              <span style={{
-                width: '100%',
-                height: '2px',
-                backgroundColor: '#1a1a1a',
-                borderRadius: '2px'
-              }}></span>
+            {/* Hamburger Icon */}
+            <div 
+              className={`hamburger ${isMenuOpen ? 'hamburger--open' : ''}`}
+              style={{
+                width: '24px',
+                height: '18px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                position: 'relative'
+              }}
+            >
+              <span 
+                style={{
+                  width: '100%',
+                  height: '2px',
+                  backgroundColor: '#1a1a1a',
+                  borderRadius: '2px',
+                  display: 'block',
+                  transition: 'all 0.3s ease',
+                  transformOrigin: 'center',
+                  transform: isMenuOpen ? 'translateY(8px) rotate(45deg)' : 'none'
+                }}
+              ></span>
+              <span 
+                style={{
+                  width: '100%',
+                  height: '2px',
+                  backgroundColor: '#1a1a1a',
+                  borderRadius: '2px',
+                  display: 'block',
+                  transition: 'all 0.3s ease',
+                  opacity: isMenuOpen ? 0 : 1,
+                  transform: isMenuOpen ? 'scaleX(0)' : 'none'
+                }}
+              ></span>
+              <span 
+                style={{
+                  width: '100%',
+                  height: '2px',
+                  backgroundColor: '#1a1a1a',
+                  borderRadius: '2px',
+                  display: 'block',
+                  transition: 'all 0.3s ease',
+                  transformOrigin: 'center',
+                  transform: isMenuOpen ? 'translateY(-8px) rotate(-45deg)' : 'none'
+                }}
+              ></span>
             </div>
           </button>
         </div>

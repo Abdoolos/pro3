@@ -168,12 +168,12 @@ h1,h2,h3{margin:0;word-wrap:break-word}
 .nav a:hover{background:#F8FAFC}
 
 /* Mobile Controls - إصلاح المشكلة */
-.mobile-controls,
-.mobile-controls-wrapper {
-  display: none;
+.mobile-controls {
+  display: none !important;
   align-items: center;
   gap: 12px;
 }
+
 
 /* Mobile Menu Button */
 .mobile-menu-btn{
@@ -447,13 +447,16 @@ img, svg, video, canvas, iframe, embed, object {
     display: none !important;
   }
   
-  .mobile-controls,
-  .mobile-controls-wrapper {
+  .mobile-controls {
     display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
   }
   
   .mobile-menu-btn {
     display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 
